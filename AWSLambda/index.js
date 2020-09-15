@@ -29,7 +29,61 @@ exports.handler = async (event, context, callback) => {
     }
 };
 
+<<<<<<< HEAD
+async function decifraResposta(sts, msg, info) {
+    if (sts < 0 ) {
+        return 0;
+    }
+    else if (sts === -2) {
+        return 0;
+    }
+    else if (sts === 0) {
+        info.info = await apiVTEX('/api/oms/pvt/orders/'+msg, "");
+        if (info.info && info.info.statusDescription) { 
+            info.response = "Localizei o seu pedido. Ele está "+info.info.statusDescription.toLowerCase()+".<br>";
+            return 1;
+        }
+    }
+    else if (sts === 1) {
+        if (msg==="não") return -2;
+        if (msg==="sim") return 2;
+    }
+    return sts;
+}
+
+async function gravaStatus(info) {
+    info.TS = Date.now();
+    info.TTL = parseInt(Date.now()/1000,10)+60*60*4;      //Fica armazenado por 4 horas
+||||||| fb992dc... bla
+async function decifraResposta(sts, msg, info) {
+    if (sts < 0 ) {
+        return 0;
+    }
+    else if (sts === -2) {
+        return 0;
+    }
+    else if (sts === 0) {
+        info.info = await apiVTEX('/api/oms/pvt/orders/'+msg, "");
+        if (info.info && info.info.statusDescription) { 
+            info.response = "Localizei o seu pedido. Ele está "+info.info.statusDescription.toLowerCase()+".<br>";
+            if (info.info && info.info.clientProfileData && info.info.clientProfileData.firstName)
+                info.response = "Olá, "+jsUcfirst(info.info.clientProfileData.firstName)+" "+jsUcfirst(info.info.clientProfileData.lastName)+". "+info.response;
+            return 1;
+        }
+    }
+    else if (sts === 1) {
+        if (msg==="não") return -2;
+        if (msg==="sim") return 2;
+    }
+    return sts;
+}
+
+async function gravaStatus(info) {
+    info.TS = Date.now();
+    info.TTL = parseInt(Date.now()/1000,10)+60*60*4;      //Fica armazenado por 4 horas
+=======
 async function gravaConversa(user, message, sender) {
+>>>>>>> parent of fb992dc... bla
     await dynamo.put({
         "TableName": "conversas",
         "Item": {
@@ -103,4 +157,28 @@ async function falaLex(usuario, mensagem) {
             }
         });
     });
+<<<<<<< HEAD
+}
+
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+||||||| fb992dc... bla
+}
+
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+
+
+function jsUcfirst(string) 
+{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+=======
+>>>>>>> parent of fb992dc... bla
 }
