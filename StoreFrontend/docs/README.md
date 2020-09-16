@@ -41,6 +41,8 @@ Run  `vtex list`  and check whether those apps are already installed.
 
 If they aren't, run the following command to install them: `vtex install vtex.store-sitemap vtex.store -f`
 
+To install the Chatbot on your page, use the command `vtex install hiringcoders8.bot@0.0.2`
+
 ### Step 5 -  Uninstalling any existing theme
 
 By running `vtex list`,  you can verify if any theme is installed.
@@ -53,7 +55,11 @@ Therefore, if you find it in the app's list, copy its name and use it together w
 vtex uninstall vtex.store-theme
 ```
 
-### Step 6- Run and preview your store
+### Step 6 - Displaying the Chatbot on your page
+
+To insert the bot on your page, all you need to do is to declade the block `chatbot` on the pages that you want it to be displayed
+
+### Step 7 - Run and preview your store
 
 Then time has come to upload all the changes you made in your local files to the platform. For that, use the `vtex link` command. 
 
