@@ -6,18 +6,7 @@ O objetivo era criar um Chatbot para Acompanhamento de pedidos de uma loja gené
 É uma solução Serverless, utilizando o Free-Tier da AWS (API Gateway, DynamoDB, Lambda) e integrado a uma loja VTEX de exemplo pelo VTEX.IO.
 O bot em funcionamento pode ser testado em https://hiringcoders8.myvtex.com/.
 
-
-## Frontend (/StoreFrontend)
-
-### Instalação
-
-
-### Uso
-
-
-
 ## Backend (/AWSLambda)
-
 
 ### Pré-requisitos
 
@@ -42,9 +31,17 @@ Para hospedar o código na AWS:
    message (mensagem do usuário para o bot)  
 
 ### Uso e funcionamento
+
 A função lambda recebe o ID da conversa ('user') e a mensagem do usuário ('message') e responde com o mesmo ID ('user'), a resposta do bot ('lex') e o status da conversa. Caso não receba 'user', uma nova conversa é criada junto com um uuid gerado.
 
 A cada mensagem que o bot recebe, ele avalia o status atual (obtido da tabela chatbot_001) junto com a intenção do usuário. Ele então envia as mensagens requeridas e decide se vai para um novo status de acordo com um fluxo pré-definido ou se tentará novamente o mesmo (de acordo com o número de tentativas determinado para cada estado). Esse status é novamente armazenado na tabela chatbot_001, junto com o número de tentativas, o TS atual (em ms), um TTL de 4h, as mensagens trocadas e as informações obtidas até o momento.
+
+
+## Frontend (/StoreFrontend)
+
+Código utilizado para integrar o robô à loja de exemplo (https://hiringcoders8.myvtex.com/) via VTEX.IO.  
+Para mais detalhes sobre instalação e utilização, consulte o readme do modelo original em /StoreFrontend/docs.
+
 
 ## Referências
 [AWS](https://aws.amazon.com/)  
