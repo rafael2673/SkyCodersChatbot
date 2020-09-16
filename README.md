@@ -3,7 +3,7 @@
 Chatbot do grupo SkyCoders - entrega final do programa Hiring Coders da Gama Academy de setembro de 2020.
 
 O objetivo era criar um Chatbot para Acompanhamento de pedidos de uma loja genérica.
-É uma solução Serverless, utilizando o Free-Tier da AWS (API Gateway, DynamoDB, Lambda) e integrado a uma loja VTEX de exemplo pelo VTEX.IO.
+É uma solução Serverless, utilizando o Free-Tier da AWS (API Gateway, DynamoDB, Lambda) e integrado a uma loja VTEX de exemplo.
 O bot em funcionamento pode ser testado em https://hiringcoders8.myvtex.com/.
 
 ## Backend (/AWSLambda)
@@ -39,7 +39,7 @@ A cada mensagem que o bot recebe, ele avalia o status atual (obtido da tabela ch
 
 ## Frontend (/StoreFrontend)
 
-Código utilizado para integrar o robô à loja de exemplo (https://hiringcoders8.myvtex.com/) via VTEX.IO.  
+Código utilizado para integrar o robô à loja de exemplo (https://hiringcoders8.myvtex.com/).  
 Para mais detalhes sobre instalação e utilização, consulte o readme do modelo original em /StoreFrontend/docs.
 
 
