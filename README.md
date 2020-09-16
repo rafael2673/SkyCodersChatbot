@@ -48,6 +48,13 @@ A cada mensagem que o bot recebe, ele avalia o status atual (obtido da tabela ch
 Código utilizado para integrar o robô à loja de exemplo (https://hiringcoders8.myvtex.com/).  
 Para mais detalhes sobre instalação e utilização, consulte o readme do modelo original em /StoreFrontend/docs.
 
+### Pré-requisitos
+
+- Ter uma conta de desenvolvedor na vtex
+- Criar um workspace de desenvolvedor ou de produção
+- Ter conhecimentos de React e vtex IO
+- VTEX IO cli e npm ou yarn instalados na sua máquina
+
 
 ## Referências
 [AWS](https://aws.amazon.com/)  
