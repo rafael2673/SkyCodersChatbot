@@ -24,6 +24,9 @@
 
   "product-summary.shelf": {
     "children": [
+      "product-summary-space",
+      "product-summary-image",
+      "product-summary-space",
       "product-summary-add-to-list-button",
       "product-summary-name",
       "product-rating-inline",
