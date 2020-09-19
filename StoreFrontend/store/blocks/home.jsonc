@@ -2,10 +2,51 @@
   "store.home": { 
     "blocks": [
       "chatbot",
-      "flex-layout.row"
+      "rich-text",
+      "flex-layout.row#info-card",
+      "flex-layout.row#shelf"
     ]
   },
-  "flex-layout.row":{
+  "rich-text": { 
+    "props": { 
+      "text": "Bem vindos a Loja SkyCoders",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "category": 1,
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Top sellers"
+      }
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#info-card":{
     "children": [
       "info-card#rethink",
       "flex-layout.col"
