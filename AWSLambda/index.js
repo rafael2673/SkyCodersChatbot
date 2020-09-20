@@ -3,8 +3,8 @@ const https = require('https');
 const dynamo = new AWS.DynamoDB.DocumentClient();
 const frases = {
     'default': ["Me desculpe! Não sei mais o que dizer, ainda estou em construção!"],
-    'deuBom':  ["Foi um prazer poder te ajudar! Tenha um excelente dia! \nEm caso de dúvidas, acesse https://help.vtex.com/ ou ligue para 0800 4242 e fale com um de nossos atendentes."],
-    'deuRuim': ["Acho que infelizmente não consegui te ajudar desta vez. \nSe tiver mais dúvidas, acesse https://help.vtex.com/ ou ligue para 0800 4242 e fale com um de nossos atendentes."],
+    'deuBom':  ["Foi um prazer poder te ajudar! Tenha um excelente dia! \n"+process.env.INFO],
+    'deuRuim': ["Acho que infelizmente não consegui te ajudar desta vez. \n"+process.env.INFO],
     'inicio':  ["Olá! Eu sou a Sky. Estou aqui para te ajudar a acompanhar seu pedido. \n Por favor, digite o código de identificação.", 
                  "Eu preciso do código do pedido. Ex: 1061711715426-01.",
                  "Não consegui localizar este pedido, tente digitar o código mais uma vez!"],
@@ -115,7 +115,7 @@ async function proxEstado(info) {
         let intent = entendeMensagem(info.message);
          if (intent==="sim") {
             info.response = "Não tenho autorização para fazer este tipo de operação.\n"+
-                            "Favor contatar a nossa loja pelo telefone 0800-4242.\n";
+                            process.env.ATENDIMENTO+"\n";
             return 'maisInfo';
         }
         if (intent==="não" || giveUp(info)) return 'maisInfo';
@@ -273,7 +273,7 @@ async function obtemStatus(id) {
     return reg.Items[0];
 }
 
-/** Faz requisições na API da VTEX, para obter informações sobre os pedidos **/
+/** Faz requisições na API da VTEX para obter informações sobre os pedidos **/
 function apiVTEX(url, data) {
 		const options = {
     	    headers: {
@@ -307,7 +307,7 @@ function apiVTEX(url, data) {
     });
 }
 
-/** Não utilizada. Servia para se comunicar com Amazon Lex. Continua aqui para possíveis melhorias futuras. **/
+/** Não utilizada. Servia para se comunicar com Amazon Lex. Continua aqui para possíveis melhorias futuras. 
 async function falaLex(usuario, mensagem) {
     return new Promise((resolve, reject) => {
         AWS.config.region = 'us-east-1';
@@ -328,6 +328,7 @@ async function falaLex(usuario, mensagem) {
         });
     });
 }
+**/
 
 /** Função auxiliar de formatação da data de entrega prevista **/
 function dataPrevista(dt){
