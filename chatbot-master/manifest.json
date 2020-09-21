@@ -1,0 +1,15 @@
+{
+  "vendor": "hiringcoders8",
+  "name": "bot",
+  "version": "0.0.3",
+  "title": "Chatbot",
+  "description": "Chatbot component",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {},
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
