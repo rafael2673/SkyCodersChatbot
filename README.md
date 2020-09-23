@@ -45,8 +45,46 @@ A cada mensagem que o bot recebe, ele avalia o status atual (obtido da tabela ch
 
 ## Frontend (/StoreFrontend)
 
-Código utilizado para integrar o robô à loja de exemplo (https://hiringcoders8.myvtex.com/).  
+Código utilizado para integrar o robô à loja de exemplo (https://hiringcoders8.myvtex.com/). 
+
+
+1- Baixar os arquivos do github: [https://github.com/rafael2673/SkyCodersChatbot]
+	- chatbot-master 
+	- StoreFrontend
+
+2- Acessar pasta chatbot-master:
+### cd chatbot-master
+
+3- Instalar vtex
+### npm i -g vtex
+
+4- Conferir versão vtex:
+### vtex -v
+
+5- Logar na conta:
+### vtex login hiringcoders8
+
+6- Criar workspace
+### vtex use seuworkspace
+
+7- Conferir:
+### vtex whoami
+
+8- Abrir a loja
+### vtex link
+
+9- Em outro terminal:
+### cd StoreFrontend
+### vtex link
+
+E a loja abrirá em um link como esse:
+[https://seuworkspace--hiringcoders8.myvtex.com/]
+
+
 Para mais detalhes sobre instalação e utilização, consulte o readme do modelo original em /StoreFrontend/docs.
+
+And Be Happy!
+
 
 ### Pré-requisitos
 

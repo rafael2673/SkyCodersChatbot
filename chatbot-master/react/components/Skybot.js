@@ -3,7 +3,8 @@ import './style/style.css';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 import BuscaMensagens from './BuscaMensagens';
-import {theme, avatarStyle, bubbleOptionStyle, rootStyle, contentStyle, footerStyle, inputStyle, submitButtonStyle} from './style/theme'
+import {theme, avatarStyle, bubbleOptionStyle, bubbleStyle, rootStyle, contentStyle, footerStyle, inputStyle, submitButtonStyle} from './style/theme'
+import imageBot from '../../react/public/skycoders.PNG'
 
 export default class Skybot extends React.Component {
 
@@ -37,9 +38,10 @@ export default class Skybot extends React.Component {
                     recognitionEnable={true}
                     recognitionLang="pt-br"
                     recognitionPlaceholder="Estou ouvindo ..."
-                    botAvatar={process.env.PUBLIC_URL + '/skycoders.PNG'}
+                    botAvatar={imageBot}
                     hideUserAvatar={true}
                     bubbleOptionStyle={bubbleOptionStyle}
+                    bubbleStyle={bubbleStyle}
                     contentStyle={contentStyle}
                     footerStyle={footerStyle}
                     inputStyle={inputStyle}

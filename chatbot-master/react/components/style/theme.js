@@ -1,12 +1,12 @@
 export const theme = {
-    background: '#edf9fc',
-    fontFamily: 'Lato',
+    background: '#ffffff',
+    fontFamily: 'Roboto',
     headerBgColor: '#005792',
     headerFontColor: '#edf9fc',
     headerFontSize: '18px',
-    botBubbleColor: '#53cde2',
-    botFontColor: '#fff',
-    userBubbleColor: '#d1f4fa',
+    botBubbleColor: '#F2F2F2',
+    botFontColor: '#0B243B',
+    userBubbleColor: '#EFF2FB',
     userFontColor: '#005792',
 };
   
@@ -19,6 +19,10 @@ export const bubbleOptionStyle = {
     border: "1px solid #005792",
     color: "#005792",
     cursor: "pointer"
+}
+export const bubbleStyle = {
+    maxWidth: '70%',
+    fontSize: '1rem'
 }
 
 export const rootStyle = {
@@ -38,12 +42,13 @@ export const inputStyle = {
     width: "95%",
     borderRadius: "20px",
     border: 0,
-    padding: "12px 52px 12px 14px",
-    backgroundColor: "#005792", 
+    padding: "12px 52px 12px 24px",
+    backgroundColor: "#F2F2F2",
+    color: "#0B243B"
 }
 export const submitButtonStyle = {
-    right: "14px",
+    right: "20px",
     top: "10px",
     padding: "10px",
-    fill: "#53cde2"
+    fill: "#2E56A6"
 }

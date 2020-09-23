@@ -24,7 +24,16 @@ export default class BuscaMensagens extends React.Component {
             const statusCode = (result && result.data) ? result.data.statusCode  : -1; 
             if(statusCode === 200) {  
                 usuario = result.data.user;      
-                this.message = result.data.lex;  
+                const split = result.data.lex.split('<br/>');
+                this.message = split.map((item, index) => {
+                    if(index === 0){
+                        return item;
+                    }
+                    else{
+                        const ret = <><br/>{item}</>
+                        return ret;
+                    }
+                });
             } 
 
             this.setState({loading: !this.state.loading});
