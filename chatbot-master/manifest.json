@@ -1,7 +1,7 @@
 {
   "vendor": "hiringcoders8",
   "name": "bot",
-  "version": "0.0.3",
+  "version": "0.0.14",
   "title": "Chatbot",
   "description": "Chatbot component",
   "defaultLocale": "pt-BR",

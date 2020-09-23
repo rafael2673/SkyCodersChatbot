@@ -4,7 +4,7 @@ import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 import BuscaMensagens from './BuscaMensagens';
 import {theme, avatarStyle, bubbleOptionStyle, bubbleStyle, rootStyle, contentStyle, footerStyle, inputStyle, submitButtonStyle} from './style/theme'
-import imageBot from '../../react/public/skycoders.PNG'
+import imageBot from '../../react/public/skycoders.png'
 
 export default class Skybot extends React.Component {
 
