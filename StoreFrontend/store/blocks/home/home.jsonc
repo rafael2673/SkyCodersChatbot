@@ -1,0 +1,108 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#deals",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "info-card#home",
+      "rich-text#question",
+      "rich-text#link",
+      "newsletter",
+      "chatbot"
+    ]
+  },
+
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://images-shoptime.b2w.io/spacey/shop/2020/09/22/Motorola-lancamento-motoG9-09-2020-shoptime-home-destaque-desktop-1250x480NOVO.png",
+          "mobileImage": "https://images-shoptime.b2w.io/spacey/shop/2020/09/22/Motorola-lancamento-motoG9-09-2020-shoptime-home-destaque-desktop-1250x480NOVO.png"
+        },
+        {
+          "image": "https://images-shoptime.b2w.io/spacey/shop/2020/09/18/Dell-intel-inside-09-2020-shoptime-home-destaque-desktop-1250x480.png",
+          "mobileImage": "https://images-shoptime.b2w.io/spacey/shop/2020/09/18/Dell-intel-inside-09-2020-shoptime-home-destaque-desktop-1250x480.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Produtos mais procurados",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://www.minutoseguros.com.br/blog/wp-content/uploads/2014/07/seguro-para-eletr%C3%B4nicos-1280x720.jpg",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  }
+}
