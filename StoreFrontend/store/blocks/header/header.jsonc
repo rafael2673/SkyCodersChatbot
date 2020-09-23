@@ -90,8 +90,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "https://files.slack.com/files-pri/T019259M6UF-F01AQV6JQNN/skycoders.png",
+      "width": "50"
     }
   },
   "header-layout.mobile": {
@@ -134,7 +134,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "https://files.slack.com/files-pri/T019259M6UF-F01AQV6JQNN/skycoders.png",
       "width": "70"
     }
   }

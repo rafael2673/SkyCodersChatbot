@@ -10,8 +10,18 @@
   text-align: center;
 }
 
+.container--shelfCategory {
+  color: #727273;
+  justify-content: left;
+  text-align: left;
+}
+
 .headingLevel2--shelfTitle {
   font-weight: 200;
+}
+
+.headingLevel2--shelfCategory {
+  font-weight: 400;
 }
 
 .container--deals .paragraph {

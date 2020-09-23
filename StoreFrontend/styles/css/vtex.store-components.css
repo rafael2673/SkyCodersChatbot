@@ -75,7 +75,7 @@
   }
 
   .label {
-    font-size: 40px;
+    font-size: 20px;
   }
 
   .infoCardContainer--info-card-home .infoCardTextContainer {
@@ -85,6 +85,21 @@
   .infoCardContainer--info-card-home .infoCardImageContainer {
     width: 70%;
   }
+
+  .infoCardHeadline {
+    font-family: serif;
+    font-size: 2.25rem;
+    font-weight: normal;
+    color: gray;
+    padding: 24px;
+}
+
+.infoCardContainer--vintage {
+  background-color: #edcfd1
+}
+.infoCardContainer--cyan {
+  background-color: #C8C1FC
+}
 
   .imageElement--storePrint {
     margin-bottom: 0px;

@@ -9,8 +9,9 @@
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
+      "rich-text#shelf-category",
+      "info-card#button-right",
+      "info-card#button-left",
       "newsletter",
       "chatbot"
     ]
@@ -83,26 +84,54 @@
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://www.minutoseguros.com.br/blog/wp-content/uploads/2014/07/seguro-para-eletr%C3%B4nicos-1280x720.jpg",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
+      "imageUrl": "https://files.slack.com/files-pri/T019259M6UF-F01AUUFNE3Z/bannertv-24h-galaxy.jpg",
+      "headline": "Aproveite nossas ofertas",
+      "callToActionText": "Confira",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
       "textAlignment": "center"
     }
   },
 
-  "rich-text#question": {
+  "rich-text#shelf-category": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "text": "## Principais categorias",
+      "blockClass": "shelfCategory"
     }
   },
 
-  "rich-text#link": {
+  "info-card#button-right": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://uploads.metropoles.com/wp-content/uploads/2019/06/26110120/notebooks-Asus.jpg",
+      "headline": "Informática e tablets",
+      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
+      "callToActionMode": "button",
+      "callToActionText": "Confira",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass": "vintage"
+    }
+  },
+  "info-card#button-left": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://www.oficinadanet.com.br/imagens/post/25420/top-10-smartphones-de-1000-ate-1500-reais.jpg",
+      "headline": "Celulares e smartphones",
+      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
+      "callToActionMode": "button",
+      "callToActionText": "Confira",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass": "cyan"
+    }
+  },
+  "newsletter": {
+    "props": {
+      "label": "Tuuudo isso e muito mais! Pra receber ofertas exclusivas, conta pra gente seu e-mail 🙂"
     }
   }
+
 }
