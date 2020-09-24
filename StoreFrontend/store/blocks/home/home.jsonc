@@ -29,6 +29,7 @@
         {
           "image": "https://images-shoptime.b2w.io/spacey/shop/2020/09/22/Motorola-lancamento-motoG9-09-2020-shoptime-home-destaque-desktop-1250x480NOVO.png",
           "mobileImage": "https://images-shoptime.b2w.io/spacey/shop/2020/09/22/Motorola-lancamento-motoG9-09-2020-shoptime-home-destaque-desktop-1250x480NOVO.png"
+          
         },
         {
           "image": "https://images-shoptime.b2w.io/spacey/shop/2020/09/18/Dell-intel-inside-09-2020-shoptime-home-destaque-desktop-1250x480.png",
@@ -74,7 +75,7 @@
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": false,
+      "fullWidth": false,      
       "blockClass": "shelf"
     }
   },
@@ -84,7 +85,7 @@
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://files.slack.com/files-pri/T019259M6UF-F01AUUFNE3Z/bannertv-24h-galaxy.jpg",
+      "imageUrl": "https://i.ibb.co/WBHYL8s/bannertv-24h-galaxy.jpg",
       "headline": "Aproveite nossas ofertas",
       "callToActionText": "Confira",
       "callToActionUrl": "/sale/d",
@@ -106,7 +107,7 @@
       "textPosition": "right",
       "imageUrl": "https://uploads.metropoles.com/wp-content/uploads/2019/06/26110120/notebooks-Asus.jpg",
       "headline": "Informática e tablets",
-      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
+      "subhead": "Notebook Dell, Acer, Samsung e mais! Encontre as melhores ofertas com ótimos preços e condições de pagamento 😍",
       "callToActionMode": "button",
       "callToActionText": "Confira",
       "callToActionUrl": "/sale/d",
@@ -120,7 +121,7 @@
       "textPosition": "left",
       "imageUrl": "https://www.oficinadanet.com.br/imagens/post/25420/top-10-smartphones-de-1000-ate-1500-reais.jpg",
       "headline": "Celulares e smartphones",
-      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
+      "subhead": "Ofertas de Smartphone das melhores marcas e com ótimos descontos só aqui 🥳",
       "callToActionMode": "button",
       "callToActionText": "Confira",
       "callToActionUrl": "/sale/d",
