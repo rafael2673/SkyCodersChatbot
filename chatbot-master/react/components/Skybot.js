@@ -4,7 +4,7 @@ import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 import BuscaMensagens from './BuscaMensagens';
 import {theme, avatarStyle, bubbleOptionStyle, bubbleStyle, rootStyle, contentStyle, footerStyle, inputStyle, submitButtonStyle} from './style/theme'
-import imageBot from '../../react/public/skycoders.png'
+import imageBot from '../../react/public/skycoders.jpg'
 
 export default class Skybot extends React.Component {
 
@@ -31,7 +31,7 @@ export default class Skybot extends React.Component {
             <ThemeProvider theme={theme}>
                 <ChatBot
                     className='chat-container'
-                    headerTitle="Seja bem-vindo"
+                    headerTitle="SkyBot"
                     avatarStyle={avatarStyle}
                     floating={true}
                     placeholder="Digite uma mensagem"
