@@ -19,7 +19,7 @@
         "href": "/apparel---accessories/",
         "noFollow": false,
         "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "text": "Móveis e Acessórios"
       }
     },
     "blocks": [
@@ -55,7 +55,7 @@
         "href": "/apparel---accessories/clothing/",
         "noFollow": false,
         "tagTitle": "Clothing",
-        "text": "Clothing"
+        "text": "Cama, mesa e banho"
       }
     }
   },
@@ -70,7 +70,7 @@
         "href": "/apparel---accessories/accessories/",
         "noFollow": false,
         "tagTitle": "Accessories",
-        "text": "Accessories"
+        "text": "Eletrodomésticos"
       }
     }
   },
@@ -85,7 +85,7 @@
         "href": "/apparel---accessories/eyeglasses/",
         "noFollow": false,
         "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
+        "text": "Utilidades"
       }
     }
   },
@@ -100,7 +100,7 @@
         "href": "/home---decor/",
         "noFollow": false,
         "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "text": "Ambiente & Decoração"
       }
     }
   },

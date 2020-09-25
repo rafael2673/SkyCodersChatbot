@@ -67,7 +67,7 @@
   },
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "children": ["slider-layout#demo-products"],    
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }

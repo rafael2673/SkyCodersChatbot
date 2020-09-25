@@ -17,10 +17,8 @@
   padding: 0px;
 }
 
-
-
 .newsletter {
-  background-color: #03054e;
+  background-color: #6397EA;
   max-width: 1528px;
   margin: 0 auto;
 }
@@ -118,15 +116,15 @@
   font-weight: bold;
 }
 
-.infoCardContainer--info-card-home :global(.vtex-button) {
+.infoCardContainer :global(.vtex-button) {
   color: white;
   background-color: #6397EA;
   border: transparent;
 }
 
-.infoCardContainer--info-card-home :global(.vtex-button):hover {
-  color: gray;
-  background-color: blue;
+.infoCardContainer :global(.vtex-button):hover {
+  color: white;
+  background-color: #0F479F;
   border: transparent;
 }
 
