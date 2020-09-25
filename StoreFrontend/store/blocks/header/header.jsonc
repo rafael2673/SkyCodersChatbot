@@ -104,7 +104,7 @@
   "logo#amigos-teto": {
     "props": {
       "title": "Logo",
-      "href": "/",
+      "href": "https://tetobrasil.netlify.app/",
       "url": "https://i.ibb.co/WsXGC0t/amigos-do-teto.png",
       "width": "50"
     }
