@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useRuntime, withRuntimeContext } from 'vtex.render-runtime';
 
 let usuario = "";
+let email = "";
 const link_en = "https://sry08m5un4.execute-api.us-east-1.amazonaws.com/dev/send";
 const link_pt = "https://a0hrd6nmy2.execute-api.us-east-1.amazonaws.com/prod/send";
 
@@ -11,7 +12,8 @@ class BuscaMensagens extends React.Component {
     constructor(props) {
         super(props);
         this.state = { loading: true }
-		this.message = "";
+		this.message = (this.props.runtime.culture.language==='en') ? "Hi! I'm Sky, your order assistant. What can I do for you?" : "";
+		email = "";
     }
     
     componentDidMount() {		
@@ -27,13 +29,14 @@ class BuscaMensagens extends React.Component {
 					"content-type": "application/json;"},
 				url: './api/vtexid/pub/authenticated/user'
 			}
-			if(!data.message) {
+			if(email==="") {
 				let response = await axios(options);
 				if (response.status === 200 && response.data) {
-					data.email = response.data.user;
+					email = response.data.user;
 					data.userID = response.data.userID;
 				}
-			}		
+			}
+			data.email = email;		
 			let link = (this.props.runtime.culture.language==='en') ? link_en : link_pt;		
             const result = await axios.post(link, data);
 
