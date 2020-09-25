@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useRuntime, withRuntimeContext } from 'vtex.render-runtime';
 
 let usuario = "";
-const link_en = "https://a0hrd6nmy2.execute-api.us-east-1.amazonaws.com/testes/send";
+const link_en = "https://sry08m5un4.execute-api.us-east-1.amazonaws.com/dev/send";
 const link_pt = "https://a0hrd6nmy2.execute-api.us-east-1.amazonaws.com/prod/send";
 
 
