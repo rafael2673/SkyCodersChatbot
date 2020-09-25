@@ -60,7 +60,7 @@ class BuscaMensagens extends React.Component {
 
     render() {      
         return (
-            <span>{(!this.state.loading) ? this.message : "Um momento, por favor..."}</span>
+            <span>{(!this.state.loading) ? this.message : "..."}</span>
         )
     }
 }
