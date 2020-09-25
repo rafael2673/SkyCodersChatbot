@@ -53,29 +53,45 @@ Código utilizado para integrar o robô à loja de exemplo (https://hiringcoders
 	- StoreFrontend
 
 2- Acessar pasta chatbot-master:
-### cd chatbot-master
+```
+cd chatbot-master
+```
 
 3- Instalar vtex
-### npm i -g vtex
+```
+npm i -g vtex
+```
 
 4- Conferir versão vtex:
-### vtex -v
+```
+vtex -v
+```
 
 5- Logar na conta:
-### vtex login hiringcoders8
+```
+vtex login hiringcoders8
+```
 
 6- Criar workspace
-### vtex use seuworkspace
+```
+vtex use seuworkspace
+```
 
 7- Conferir:
-### vtex whoami
+```
+vtex whoami
+```
 
 8- Abrir a loja
-### vtex link
+```
+vtex link
+```
 
 9- Em outro terminal:
-### cd StoreFrontend
-### vtex link
+```
+cd StoreFrontend
+vtex link
+```
 
 E a loja abrirá em um link como esse:
 [https://seuworkspace--hiringcoders8.myvtex.com/]
