@@ -21,7 +21,7 @@
         "href": "#",
         "noFollow": false,
         "tagTitle": "News",
-        "text": "News"
+        "text": "Acompanhar pedido"
       }
     }
   },
@@ -36,7 +36,7 @@
         "href": "#",
         "noFollow": false,
         "tagTitle": "BlackFriday",
-        "text": "Black Friday"
+        "text": "Perguntas frequentes"
       }
     }
   },
@@ -51,7 +51,7 @@
         "href": "#",
         "noFollow": false,
         "tagTitle": "Sale",
-        "text": "Sale"
+        "text": "Chat online"
       }
     }
   },
@@ -66,7 +66,7 @@
         "href": "#",
         "noFollow": false,
         "tagTitle": "Personalization",
-        "text": "Personalization"
+        "text": "Atendimento pelo Whatsapp"
       }
     }
   },
@@ -93,7 +93,7 @@
         "href": "/decoration/smartphones",
         "noFollow": true,
         "tagTitle": "Smartphones",
-        "text": "Smartphones"
+        "text": "Como comprar"
       }
     }
   },
@@ -109,7 +109,7 @@
         "href": "/decoration/videogames",
         "noFollow": true,
         "tagTitle": "Videogames",
-        "text": "Videogames"
+        "text": "Pagamento"
       }
     }
   },
@@ -125,7 +125,7 @@
         "href": "/decoration/tvs",
         "noFollow": true,
         "tagTitle": "TVs",
-        "text": "TVs"
+        "text": "Entrega"
       }
     }
   },

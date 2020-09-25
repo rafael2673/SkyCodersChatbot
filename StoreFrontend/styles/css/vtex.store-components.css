@@ -94,11 +94,26 @@
     padding: 24px;
 }
 
-.infoCardContainer--vintage {
-  background-color: #edcfd1
+.infoCardContainer--one {
+  background-color: #F3F1F4
 }
-.infoCardContainer--cyan {
-  background-color: #C8C1FC
+.infoCardContainer--two {
+  background-color: #FFF
+}
+.infoCardContainer--three {
+  background-color: #DCDAD2;
+}
+.infoCardContainer--one .infoCardHeadline { 
+  color: #9610E4;
+  font-weight: bold;
+}
+.infoCardContainer--two .infoCardHeadline {  
+  color: #F9336B;
+  font-weight: bold;
+}
+.infoCardContainer--three .infoCardHeadline {  
+  color: #5D09EE;
+  font-weight: bold;
 }
 
   .imageElement--storePrint {

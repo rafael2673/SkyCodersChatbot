@@ -12,6 +12,7 @@
       "rich-text#shelf-category",
       "info-card#button-right",
       "info-card#button-left",
+      "info-card#button2-right",
       "newsletter",
       "chatbot"
     ]
@@ -27,13 +28,17 @@
       "height": 720,
       "images": [
         {
-          "image": "https://images-shoptime.b2w.io/spacey/shop/2020/09/22/Motorola-lancamento-motoG9-09-2020-shoptime-home-destaque-desktop-1250x480NOVO.png",
-          "mobileImage": "https://images-shoptime.b2w.io/spacey/shop/2020/09/22/Motorola-lancamento-motoG9-09-2020-shoptime-home-destaque-desktop-1250x480NOVO.png"
+          "image": "https://tokstok.vteximg.com.br/arquivos/ids/2307083/banner-home_desktop_institucional_espaco-inteligente_2508.jpg?v=637339267905530000",
+          "mobileImage": "https://tokstok.vteximg.com.br/arquivos/ids/2307083/banner-home_desktop_institucional_espaco-inteligente_2508.jpg?v=637339267905530000"
           
         },
         {
-          "image": "https://images-shoptime.b2w.io/spacey/shop/2020/09/18/Dell-intel-inside-09-2020-shoptime-home-destaque-desktop-1250x480.png",
-          "mobileImage": "https://images-shoptime.b2w.io/spacey/shop/2020/09/18/Dell-intel-inside-09-2020-shoptime-home-destaque-desktop-1250x480.png"
+          "image": "https://tokstok.vteximg.com.br/arquivos/ids/2225438/banner-home_desktop_institucional_cadeiras_2805.jpg?v=637262874730270000",
+          "mobileImage": "https://tokstok.vteximg.com.br/arquivos/ids/2225438/banner-home_desktop_institucional_cadeiras_2805.jpg?v=637262874730270000"
+        },
+        {
+          "image": "https://tokstok.vteximg.com.br/arquivos/ids/2327979/banner-home_desktop_institucional_urbano-vintage_2209.jpg?v=637363368024570000",
+          "mobileImage": "https://tokstok.vteximg.com.br/arquivos/ids/2327979/banner-home_desktop_institucional_urbano-vintage_2209.jpg?v=637363368024570000"
         }
       ]
     }
@@ -53,7 +58,7 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Produtos mais procurados",
+      "text": "## ofertas com preços imbatíveis",
       "blockClass": "shelfTitle"
     }
   },
@@ -85,8 +90,8 @@
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://i.ibb.co/WBHYL8s/bannertv-24h-galaxy.jpg",
-      "headline": "Aproveite nossas ofertas",
+      "imageUrl": "https://www.showmetech.com.br/wp-content/uploads//2019/06/Eletrodomesticos-990x556.jpg",
+      "headline": "Só as melhores ofertas 🤩",
       "callToActionText": "Confira",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
@@ -105,28 +110,42 @@
     "props": {
       "isFullModeStyle": false,
       "textPosition": "right",
-      "imageUrl": "https://uploads.metropoles.com/wp-content/uploads/2019/06/26110120/notebooks-Asus.jpg",
-      "headline": "Informática e tablets",
-      "subhead": "Notebook Dell, Acer, Samsung e mais! Encontre as melhores ofertas com ótimos preços e condições de pagamento 😍",
+      "imageUrl": "https://i1.wp.com/novonegocio.com.br/wp-content/uploads/2012/07/Confeccao-de-Artigos-de-Cama-Mesa-e-Banho.jpg?fit=700%2C400&ssl=1",
+      "headline": "Cama, mesa e banho",
+      "subhead": "Toda a tradição e qualidade em nossos produtos com preços baixos para você aproveitar. 😍",
       "callToActionMode": "button",
       "callToActionText": "Confira",
       "callToActionUrl": "/sale/d",
       "textAlignment": "center",
-      "blockClass": "vintage"
+      "blockClass": "one"
     }
   },
   "info-card#button-left": {
     "props": {
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://www.oficinadanet.com.br/imagens/post/25420/top-10-smartphones-de-1000-ate-1500-reais.jpg",
-      "headline": "Celulares e smartphones",
-      "subhead": "Ofertas de Smartphone das melhores marcas e com ótimos descontos só aqui 🥳",
+      "imageUrl": "https://www.showmetech.com.br/wp-content/uploads//2018/02/home-appliances-range.jpg",
+      "headline": "Eletrodomésticos",
+      "subhead": "As melhores ofertas de eletrodomésticos que a sua casa precisa! Refrigeradores, freezers, fogões, micro-ondas, lavadoras e muito mais 🥳",
       "callToActionMode": "button",
       "callToActionText": "Confira",
       "callToActionUrl": "/sale/d",
       "textAlignment": "center",
-      "blockClass": "cyan"
+      "blockClass": "two"
+    }
+  },
+  "info-card#button2-right": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://cdn.iset.io/assets/54183/produtos/2475/amb009_-_quadro_decorativo_ambiente_natureza.jpg",
+      "headline": "Decorativos",
+      "subhead": "Quadros decorativos para sala, quarto, cozinha, hall, escritório, área externa, área gourmet, presente.",
+      "callToActionMode": "button",
+      "callToActionText": "Confira",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass": "three"
     }
   },
   "newsletter": {
