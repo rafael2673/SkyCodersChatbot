@@ -18,7 +18,7 @@
 }
 
 .newsletter {
-  background-color: #03054e;
+  background-color: #6397EA;
   max-width: 1528px;
   margin: 0 auto;
 }
@@ -84,7 +84,7 @@
 
   .infoCardContainer--info-card-home .infoCardImageContainer {
     width: 70%;
-  }
+  }  
 
   .infoCardHeadline {
     font-family: serif;
@@ -114,6 +114,18 @@
 .infoCardContainer--three .infoCardHeadline {  
   color: #5D09EE;
   font-weight: bold;
+}
+
+.infoCardContainer :global(.vtex-button) {
+  color: white;
+  background-color: #6397EA;
+  border: transparent;
+}
+
+.infoCardContainer :global(.vtex-button):hover {
+  color: white;
+  background-color: #0F479F;
+  border: transparent;
 }
 
   .imageElement--storePrint {

@@ -25,3 +25,14 @@
   padding-left: .5rem;
   padding-right: .5rem;
 }
+.slide--shelf :global(.vtex-button) {
+  color: white;
+  background-color: #6397EA;
+  border: transparent;
+}
+
+.slide--shelf :global(.vtex-button):hover {
+  color: white;
+  background-color: #0F479F;
+  border: transparent;
+}

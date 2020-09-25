@@ -12,8 +12,8 @@
 
 .container--shelfCategory {
   color: #727273;
-  justify-content: left;
-  text-align: left;
+  justify-content: center;
+  text-align: center;
 }
 
 .headingLevel2--shelfTitle {
@@ -21,7 +21,7 @@
 }
 
 .headingLevel2--shelfCategory {
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .container--deals .paragraph {
@@ -68,11 +68,11 @@
   text-decoration: none;
   font-size: 36px;
   font-weight: 300;
-  color: #03034E;
+  color: #6397EA;
 }
 
 .container--title {
-  color: #03034E;
+  color: #6397EA;
   font-size: 28px;
   font-weight: 700;
 }
@@ -88,7 +88,7 @@
   }
 
   .container--title {
-    color: #03034E;
+    color: #6397EA;
     font-size: 40px;
     font-weight: 700;
     max-width: 60%;
