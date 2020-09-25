@@ -31,7 +31,7 @@ export default class Skybot extends React.Component {
             <ThemeProvider theme={theme}>
                 <ChatBot
                     className='chat-container'
-                    headerTitle="SkyBot"
+                    headerTitle="Bem vindo"
                     avatarStyle={avatarStyle}
                     floating={true}
                     placeholder="Digite uma mensagem"
