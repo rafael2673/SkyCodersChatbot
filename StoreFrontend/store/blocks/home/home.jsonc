@@ -101,7 +101,7 @@
 
   "rich-text#shelf-category": {
     "props": {
-      "text": "## Principais categorias",
+      "text": "## categorias em destaque",
       "blockClass": "shelfCategory"
     }
   },
